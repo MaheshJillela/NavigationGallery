@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #menu4_body{
+    background-color:  #17a2b8;
+    overflow: hidden;
+  }
+
+  .menu4_nav{
+    background-color:#17a2b8;
+    position: absolute;
+    right: 10px;
+    width: 80px;
+    height: 300px;
+    display: flex;
+    cursor: grab;
+    
+    
+  }
+  .menu4_nav .menu4_nav_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+  }
+  .menu4_nav_content .menu4_toggle-btn,
+  .menu4_nav_content .menu4_span a{
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .menu4_nav_content .menu4_toggle-btn{
+    font-size: 35px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(-225deg);
+    transition: all 0.6s ease;
+  }
+  .menu4_nav.open .menu4_toggle-btn{
+    transform: rotate(0deg);
+  }
+  .menu4_nav_content .menu4_span{
+    position: absolute;
+    transition: all 0.6s ease;
+    opacity: 0;
+  }
+  .menu4_nav.open .menu4_nav_content .menu4_span {
+    transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
+    opacity: 1;
+  }
+  .menu4_nav_content   .menu4_span, .menu4_a{
+    text-decoration: none;
+    transform: rotate(45deg);
+  }
+  .menu4_nav_content   .menu4_span  #menu4_i1, #menu4_i2, #menu4_i3, #menu4_i4, #menu4_i5, #menu4_i6{
+    font-size: 24px;
+    color: #0e2431;
+    transform: rotate(calc(var(--i) * (360deg/ -8)));
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+  .menu4_nav_content .menu4_span .menu4_a:hover #menu4_i1, #menu4_i2, #menu4_i3, #menu4_i4, #menu4_i5, #menu4_i6{
+    opacity: 1;
+  }
+  
+
+
+
+  #download{
+    background-color:black;
+    width:300px;
+    border-radius:10px;
+     position:absolute;
+     height: fit-content;
+     bottom: 50px;
+     right: 10px;
+     text-align: center;
+     cursor: pointer;
+     overflow: hidden;
+  }
+  #download_icon{
+    color: green; 
+    font-size: 50px;
+     position: relative;
+     margin: auto;
+  }
+  
